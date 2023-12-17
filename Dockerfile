@@ -17,5 +17,4 @@ RUN curl -SL https://github.com/alibaba/Sentinel/releases/download/${SENTINEL_DA
     && ln -snf /usr/share/zoneinfo/$TIME_ZONE /etc/localtime && echo $TIME_ZONE > /etc/timezone
 
 EXPOSE 8858 8719
-
-ENTRYPOINT ["java" "-Dserver.port=8858" "-Dcsp.sentinel.api.port=8719" "-Dcsp.sentinel.dashboard.server=localhost:8858" "-Dproject.name=sentinel-dashboard" "-jar" "sentinel-dashboard.jar"]
+ENTRYPOINT ["java", "-Dserver.port=8858", "-Dcsp.sentinel.api.port=8719", "-Dcsp.sentinel.dashboard.server=localhost:8858", "-Dproject.name=sentinel-dashboard", "-jar", "sentinel-dashboard.jar"]
