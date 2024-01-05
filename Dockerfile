@@ -5,7 +5,7 @@ LABEL maintainer="chongh.ou <ochhgz@163.com>"
 ENV BASE_DIR="/home/sentinel-dashboard" \
     TIME_ZONE="Asia/Shanghai"
 
-ARG SENTINEL_DASHBOARD_VERSION=1.8.6
+ARG SENTINEL_DASHBOARD_VERSION=1.8.7
 
 WORKDIR $BASE_DIR
 
